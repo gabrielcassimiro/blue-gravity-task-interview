@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Body_2
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 781413771, guid: 061487b7e8ff1474c9ab30a422a9825f, type: 3}
+  icon: {fileID: 781413771, guid: 20c5a8b2857358f4fa286ac0309abe50, type: 3}
+  sprite: {fileID: 781413771, guid: 061487b7e8ff1474c9ab30a422a9825f, type: 3}
   prefab: {fileID: 1975214889564942873, guid: 63d17308c147ba3438404200cc326a85, type: 3}
-  price: 100
+  price: 150
   index: 5
   itemType: 1

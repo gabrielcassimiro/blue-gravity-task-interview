@@ -27,6 +27,29 @@ namespace NPCs
             CharacterController.Instance.GetActions().Cancel.performed += CloseShop;
             if (shopPanel && shopPanel.gameObject.activeSelf) ShowShop(false);
         }
+        
+        
+
+        #region Methods: Public
+        
+        public void ShowShop(bool value)
+        {
+            if (shopPanel)
+            {
+                shopPanel.gameObject.SetActive(value);
+                shopPanel.ShowItems();
+            }
+        }
+        
+        public void CloseShop()
+        {
+            if(shopPanel && shopPanel.gameObject.activeSelf)
+                ShowShop(false);
+        }
+
+        #endregion
+
+        #region Methods: Private
 
         private void CloseShop(InputAction.CallbackContext ctx)
         {
@@ -38,14 +61,6 @@ namespace NPCs
             }
         }
 
-        public void ShowShop(bool value)
-        {
-            //TODO - Show Shop Actions
-            if (shopPanel)
-            {
-                shopPanel.gameObject.SetActive(value);
-                shopPanel.ShowItems();
-            }
-        }
+        #endregion
     }
 }

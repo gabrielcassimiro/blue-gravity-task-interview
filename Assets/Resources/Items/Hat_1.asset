@@ -13,8 +13,9 @@ MonoBehaviour:
   m_Name: Hat_1
   m_EditorClassIdentifier: 
   itemName: 
-  icon: {fileID: 208676220, guid: 2394abe41ce30d0479b947e2168acfc8, type: 3}
+  icon: {fileID: 596318173, guid: fe5f521b3493ea843bb06e1a4fa74404, type: 3}
+  sprite: {fileID: 208676220, guid: 2394abe41ce30d0479b947e2168acfc8, type: 3}
   prefab: {fileID: 792439311495591416, guid: 99d6cc04c8e573442b22349357421822, type: 3}
-  price: 0
+  price: 20
   index: 0
   itemType: 0

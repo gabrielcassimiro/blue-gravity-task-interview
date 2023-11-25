@@ -5,6 +5,8 @@ namespace Character
 {
     public class CharacterAnimation : MonoBehaviour
     {
+        [SerializeField] private AudioSource sound;
+        
         private Animator _animator;
         private static readonly int Speed = Animator.StringToHash("Speed");
         private static readonly int Vertical = Animator.StringToHash("Vertical");
@@ -19,6 +21,12 @@ namespace Character
         {
             if (CharacterMovement.Instance)
                 CharacterMovement.Instance.OnAnimationUpdate += AnimationUpdate;
+        }
+
+        public void PlaySound()
+        {
+            if(!sound) return;
+            sound.Play();
         }
 
         private void AnimationUpdate(Vector2 movement, float speed)

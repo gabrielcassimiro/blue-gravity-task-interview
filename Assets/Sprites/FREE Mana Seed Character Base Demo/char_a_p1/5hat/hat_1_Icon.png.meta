@@ -1,0 +1,243 @@
+fileFormatVersion: 2
+guid: fe5f521b3493ea843bb06e1a4fa74404
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 32
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: hat_1_Icon_0
+      rect:
+        serializedVersion: 2
+        x: 24
+        y: 485
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 483117c2f23ff2b4aadb3726c23a4dd2
+      internalID: 596318173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      hat_1_Icon_12: 1753033463
+      hat_1_Icon_6: 1910225767
+      hat_1_Icon_10: -1856893049
+      hat_1_Icon_32: -1255585358
+      hat_1_Icon_16: 1483297111
+      hat_1_Icon_38: -1112934123
+      hat_1_Icon_31: 1594680327
+      hat_1_Icon_26: -1249882691
+      hat_1_Icon_34: 320437157
+      hat_1_Icon_42: -1224913824
+      hat_1_Icon_18: 441134001
+      hat_1_Icon_40: -1235884888
+      hat_1_Icon_49: -507717552
+      hat_1_Icon_44: 1495781122
+      hat_1_Icon_0: 596318173
+      hat_1_Icon_9: 2020917360
+      hat_1_Icon_25: 146346706
+      hat_1_Icon_15: 1212659055
+      hat_1_Icon_47: -722149672
+      hat_1_Icon_59: 1912168705
+      hat_1_Icon_3: -1782668322
+      hat_1_Icon_29: 1936633750
+      hat_1_Icon_17: 1220756194
+      hat_1_Icon_48: 1013664244
+      hat_1_Icon_51: 845697748
+      hat_1_Icon_5: 1554525512
+      hat_1_Icon_57: -1842159041
+      hat_1_Icon_58: -820437837
+      hat_1_Icon_24: 1766899248
+      hat_1_Icon_4: -1349923549
+      hat_1_Icon_56: -1010940455
+      hat_1_Icon_37: -1539247857
+      hat_1_Icon_41: 1428471378
+      hat_1_Icon_23: -304843146
+      hat_1_Icon_45: 2096326700
+      hat_1_Icon_27: 350508935
+      hat_1_Icon_35: 869624816
+      hat_1_Icon_39: 1314958061
+      hat_1_Icon_53: 826802797
+      hat_1_Icon_19: 1228429964
+      hat_1_Icon_43: 673705027
+      hat_1_Icon_50: 5099617
+      hat_1_Icon_1: 1824987307
+      hat_1_Icon_36: 739136819
+      hat_1_Icon_2: -1860553665
+      hat_1_Icon_11: -992471753
+      hat_1_Icon_60: -1233254215
+      hat_1_Icon_21: -1599125629
+      hat_1_Icon_22: -1034282834
+      hat_1_Icon_28: -954213620
+      hat_1_Icon_61: -444900248
+      hat_1_Icon_20: -167200835
+      hat_1_Icon_62: -135096244
+      hat_1_Icon_14: -1393250009
+      hat_1_Icon_33: 1338181527
+      hat_1_Icon_30: 1207876709
+      hat_1_Icon_52: 264042074
+      hat_1_Icon_13: -1465714257
+      hat_1_Icon_46: -1059787555
+      hat_1_Icon_54: -90827796
+      hat_1_Icon_55: 596565648
+      hat_1_Icon_63: 1999900674
+      hat_1_Icon_7: 363489444
+      hat_1_Icon_8: 386733721
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

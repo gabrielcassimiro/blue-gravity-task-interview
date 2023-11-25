@@ -7,6 +7,7 @@ namespace Scriptable
     {
         public string itemName;
         public Sprite icon;
+        public Sprite sprite;
         public GameObject prefab;
         public int price;
         public int index;

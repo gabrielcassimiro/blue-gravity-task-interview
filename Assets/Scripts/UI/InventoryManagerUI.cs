@@ -45,19 +45,19 @@ namespace UI
 
         public void ShowEquippedItems()
         {
-            if (items == null || slots == null) return;
             ClearEquippedItems();
+            if (itemsEquipped == null || slots == null) return;
             foreach (var item in itemsEquipped)
             {
-                if(headSlot && item.itemType == ItemType.Head) headSlot.SetItem(item, true);
-                if(bodySlot && item.itemType == ItemType.Body) bodySlot.SetItem(item, true);
-                if(footSlot && item.itemType == ItemType.Foot) footSlot.SetItem(item, true);
-                if(handSlot && item.itemType == ItemType.Hand) handSlot.SetItem(item, true);
+                if(headSlot && item.itemType == ItemType.Head) headSlot.SetItem(item, true, equipped: true);
+                if(bodySlot && item.itemType == ItemType.Body) bodySlot.SetItem(item, true, equipped: true);
+                if(footSlot && item.itemType == ItemType.Foot) footSlot.SetItem(item, true, equipped: true);
+                if(handSlot && item.itemType == ItemType.Hand) handSlot.SetItem(item, true, equipped: true);
                 
-                if(headView && item.itemType == ItemType.Head) headView.SetItem(item);
-                if(bodyView && item.itemType == ItemType.Body) bodyView.SetItem(item);
-                if(footView && item.itemType == ItemType.Foot) footView.SetItem(item);
-                if(handView && item.itemType == ItemType.Hand) handView.SetItem(item);
+                if(headView && item.itemType == ItemType.Head) headView.SetItem(item, useSprite: true);
+                if(bodyView && item.itemType == ItemType.Body) bodyView.SetItem(item, useSprite: true);
+                if(footView && item.itemType == ItemType.Foot) footView.SetItem(item, useSprite: true);
+                if(handView && item.itemType == ItemType.Hand) handView.SetItem(item, useSprite: true);
             }
         }
 
@@ -81,17 +81,14 @@ namespace UI
         
         private void ClearEquippedItems()
         {
-            foreach (var item in itemsEquipped)
-            {
-                if(headSlot) headSlot.ClearItem();
-                if(bodySlot) bodySlot.ClearItem();
-                if(footSlot) footSlot.ClearItem();
-                if(handSlot) handSlot.ClearItem();
-                if(headView && item.itemType == ItemType.Head) headView.ClearItem();
-                if(bodyView && item.itemType == ItemType.Body) bodyView.ClearItem();
-                if(footView && item.itemType == ItemType.Foot) footView.ClearItem();
-                if(handView && item.itemType == ItemType.Hand) handView.ClearItem();
-            }
+            if(headSlot) headSlot.ClearItem();
+            if(bodySlot) bodySlot.ClearItem();
+            if(footSlot) footSlot.ClearItem();
+            if(handSlot) handSlot.ClearItem();
+            if(headView) headView.ClearItem();
+            if(bodyView) bodyView.ClearItem();
+            if(footView) footView.ClearItem();
+            if(handView) handView.ClearItem();
         }
     }
 }

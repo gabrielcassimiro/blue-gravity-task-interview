@@ -12,6 +12,10 @@ namespace Character
     {
         public static CharacterController Instance;
 
+        public delegate void InventoryUpdate();
+
+        public InventoryUpdate OnInventoryUpdate;
+
         [Header("Character Properties")] [SerializeField]
         private int money;
 
@@ -73,10 +77,55 @@ namespace Character
                 EquipItem(item);
             }
 
-            if (InventoryManagerUI.Instance) InventoryManagerUI.Instance.UpdateInventory();
+            if (InventoryManagerUI.Instance)
+            {
+                InventoryManagerUI.Instance.UpdateInventory();
+                OnInventoryUpdate?.Invoke();
+            }
+        }
+
+        public void UnEquipItem(ShopItemScriptable item)
+        {
+            var desiredItem = itemsEquipped.FirstOrDefault(x => x == item);
+            items.Add(desiredItem);
+            itemsEquipped.Remove(desiredItem);
+            
+            if (InventoryManagerUI.Instance)
+            {
+                InventoryManagerUI.Instance.UpdateInventory();
+            }
+            OnInventoryUpdate?.Invoke();
         }
 
         public int GetMoney() => money;
+
+        public void ChangeMoney(int value)
+        {
+            money += value;
+            GameplayUI.Instance.UpdateMoneyText(money);
+        }
+
+        public void AddItem(ShopItemScriptable item)
+        {
+            items.Add(item);
+
+            if (InventoryManagerUI.Instance && InventoryManagerUI.Instance.gameObject.activeSelf)
+            {
+                InventoryManagerUI.Instance.UpdateInventory();
+                OnInventoryUpdate?.Invoke();
+            }
+        }
+
+        public void SellItem(ShopItemScriptable item)
+        {
+            items.Remove(item);
+
+            if (InventoryManagerUI.Instance && InventoryManagerUI.Instance.gameObject.activeSelf)
+            {
+                InventoryManagerUI.Instance.UpdateInventory();
+            }
+            OnInventoryUpdate?.Invoke();
+        }
 
         #endregion
 

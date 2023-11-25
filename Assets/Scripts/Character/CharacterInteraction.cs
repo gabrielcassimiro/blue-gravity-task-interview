@@ -38,6 +38,13 @@ namespace Character
                 if (shopKeeper)
                 {
                     shopKeeper.ShowShop(true);
+                    return;
+                }
+
+                var npc = _gameObjectTriggered.GetComponent<Npc>();
+                if (npc)
+                {
+                    npc.ShowInteraction();
                 }
             }
         }
@@ -73,6 +80,9 @@ namespace Character
                 if (GameplayUI.Instance)
                 {
                     GameplayUI.Instance.ShowInteractTextPanel(false);
+                    var shop = other.GetComponent<ShopKeeper>();
+                    if (shop)
+                        shop.CloseShop();
                     _gameObjectTriggered = null;
                 }
             }

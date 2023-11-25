@@ -34,6 +34,11 @@ namespace UI
             moneyText.text = $"{value}";
         }
 
+        public void QuitGame()
+        {
+            Application.Quit();
+        }
+
         #endregion
     }
 }
